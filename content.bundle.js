@@ -1,0 +1,1 @@
+(()=>{var e=window.location.href;chrome.runtime.sendMessage({action:"checkCredibility",url:e},(function(e){console.log("Received response from background script:",e),e&&void 0!==e.credibility?alert("This source has a credibility score of: "+e.credibility):alert("Failed to fetch credibility score. Please try again later.")}))})();

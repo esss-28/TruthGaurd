@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TruthGuard</title>
+  <style>
+#credibilityScore {
+  font-size: 14px;
+  color: rgb(162, 194, 137);
+  font-weight: bold;
+  margin: 5px;
+}
+
+#checkCredibilityButton {
+  background-color: #c3cbac;
+  color: #2e3c07;
+  font-size: 14px; 
+  padding: 5px 5px;
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#checkCredibilityButton:hover {
+  background-color: #a5ad8f;
+  transform: scale(1.05);
+}
+
+
+/* #checkCredibilityButton:active {
+  background-color: #adbb86;
+  transform: scale(1);
+} */
+
+/* #checkCredibilityButton:focus {
+  outline: 2px solid #a5ae8d;
+} */
+
+  </style>
+</head>
+<body>
+  <h3>Article Credibility Score</h3>
+  <button id="checkCredibilityButton">Check Credibility</button><br>
+  <div id="credibilityScore"><center><i>Loading...</i></center></div>
+
+  <script src="./popup.js"></script>
+
+</body>
+</html>
